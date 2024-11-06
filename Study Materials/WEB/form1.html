@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showing Forms</title>
+    <link rel="stylesheet" href="cssForm.css">
+</head>
+
+<body>
+    <form action="">
+        <h1>Registration</h1>
+        <!-- label enables entering data without clicking on the text feild, just cick anywhere to start giving input -->
+        <p>
+            <label for="label">Is the label working??</label>
+            <input id="label"  type="text" placeholder="label example">
+        </p>
+        
+        <p>Time: <input type="time" min="09:00" max="18:00" value="09:00" 5name="name" required> </p>
+        <fieldset>
+            <legend>Identification:</legend>
+            <p>User ID: <input type="text"placeholder="enter your user id" name="name"></p>
+            <p>Password: <input type="password" placeholder="enter your password"name="name"> </p>
+            <p>Date of birth <input type="date"></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <p>Male<input type="radio" name="gender" id="11">
+                Female<input type="radio" name="gender" id="11"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Contact:</legend>
+            <p>Phone: <input type="tel" placeholder="enter phone number"name="name"> </p>
+            <p>Email: <input type="email"placeholder="enter your email address in correct format"pattern=".+@.+com" size="30" name="name"> </p>
+            <p>Address : <textarea placeholder="type in your detailed address" name="address" id="11" cols="50" rows="8"
+                    style="width : 422px ; height:34px "></textarea></p>
+            <!-- <p>Address : <textarea name="address" id="11" cols="50" rows="8"></textarea></p> -->
+        </fieldset>
+        <button>want to skip form filling? sign up with google!</button>
+        <fieldset>
+            <legend>Color:</legend>
+            Color preference I : <input type="color" name="col1" required value="#e66465">
+            <label for="col1">this is first color</label>
+            <br>
+            Color preference II :<input type="color" name="col2" required value="#f6b73c">
+            <label for="col2">this is second color</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payments</legend>
+            <p>
+                Amount to pay :
+                <input type="range" id="volume" name="volume" min="0" max="11">
+            </p>
+            <p>
+                Payment method: <select name="Card type" required>
+                    <label for="volume">Volume</label>
+                    <option value="">--Mode of payment--</option>
+                    <option value="UPI">UPI</option>
+                    <option value="Card">card</option>
+                    <option value="Wallets">wallets</option>
+                    <option value="COD">COD</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Upload:</legend>
+            <p>Upload profile picture<input type="file" id="provile" name="avatar" accept="image/png, image/jpeg"></p>
+            <p>Upload resume <input type="file" id="resume" name="resume"
+                    accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+            </p>
+        </fieldset>
+        <br>
+        <input type="reset" value="RESET DATA">
+        <!-- <input type="submit" style="height:30px; width:60px" name="" id="" value="Submit"> -->
+        <input type="submit" name="" id="" value="SUBMIT FORM">
+
+    </form>
+</body>
+
+</html>

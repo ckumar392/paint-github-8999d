@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "wonder_woman_1984_neon_synthwave_poster_4k_hd_movies-3840x2160.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

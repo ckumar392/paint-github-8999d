@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AC6C18624D0C2F1003127FD /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE4949024CC93C900E8DD58 /* HostingController.swift */; };
+		8AE4947B24CC93C200E8DD58 /* Intervally.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8AE4947A24CC93C200E8DD58 /* Intervally.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AE4948124CC93C200E8DD58 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE4947F24CC93C200E8DD58 /* Interface.storyboard */; };
+		8AE4948324CC93C900E8DD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE4948224CC93C900E8DD58 /* Assets.xcassets */; };
+		8AE4948A24CC93C900E8DD58 /* Intervally.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8AE4948924CC93C900E8DD58 /* Intervally.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AE4948F24CC93C900E8DD58 /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE4948E24CC93C900E8DD58 /* SelectorView.swift */; };
+		8AE4949324CC93C900E8DD58 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE4949224CC93C900E8DD58 /* ExtensionDelegate.swift */; };
+		8AE4949524CC93C900E8DD58 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE4949424CC93C900E8DD58 /* NotificationController.swift */; };
+		8AE4949724CC93C900E8DD58 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE4949624CC93C900E8DD58 /* NotificationView.swift */; };
+		8AE4949924CC93CA00E8DD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE4949824CC93CA00E8DD58 /* Assets.xcassets */; };
+		8AE4949C24CC93CA00E8DD58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE4949B24CC93CA00E8DD58 /* Preview Assets.xcassets */; };
+		8AE70E9524D752E900508BC3 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE70E9424D752E900508BC3 /* TimerView.swift */; };
+		8AE70E9724D7543F00508BC3 /* SelectorOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE70E9624D7543F00508BC3 /* SelectorOptions.swift */; };
+		8AE70E9924D7736E00508BC3 /* SelectorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE70E9824D7736E00508BC3 /* SelectorButton.swift */; };
+		8AE70E9B24D7743000508BC3 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE70E9A24D7743000508BC3 /* Styles.swift */; };
+		8AE70E9D24D77A9D00508BC3 /* PickerPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE70E9C24D77A9D00508BC3 /* PickerPopUp.swift */; };
+		8AE70EA024D7AFD400508BC3 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE70E9F24D7AFD400508BC3 /* Ring.swift */; };
+		8AE70EA324D8744A00508BC3 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE70EA224D8744A00508BC3 /* TimerState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AE4947C24CC93C200E8DD58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AE4947024CC93C200E8DD58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AE4947924CC93C200E8DD58;
+			remoteInfo = "Intervally WatchKit App";
+		};
+		8AE4948B24CC93C900E8DD58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AE4947024CC93C200E8DD58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AE4948824CC93C900E8DD58;
+			remoteInfo = "Intervally WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AE494A424CC93CA00E8DD58 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8AE4948A24CC93C900E8DD58 /* Intervally.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE494A824CC93CA00E8DD58 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8AE4947B24CC93C200E8DD58 /* Intervally.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8AE4947624CC93C200E8DD58 /* Intervally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intervally.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE4947A24CC93C200E8DD58 /* Intervally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intervally.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE4948024CC93C200E8DD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8AE4948224CC93C900E8DD58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AE4948424CC93C900E8DD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AE4948924CC93C900E8DD58 /* Intervally.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Intervally.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE4948E24CC93C900E8DD58 /* SelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorView.swift; sourceTree = "<group>"; };
+		8AE4949024CC93C900E8DD58 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		8AE4949224CC93C900E8DD58 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8AE4949424CC93C900E8DD58 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8AE4949624CC93C900E8DD58 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		8AE4949824CC93CA00E8DD58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AE4949B24CC93CA00E8DD58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8AE4949D24CC93CA00E8DD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AE4949E24CC93CA00E8DD58 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8AE70E9424D752E900508BC3 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		8AE70E9624D7543F00508BC3 /* SelectorOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorOptions.swift; sourceTree = "<group>"; };
+		8AE70E9824D7736E00508BC3 /* SelectorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorButton.swift; sourceTree = "<group>"; };
+		8AE70E9A24D7743000508BC3 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		8AE70E9C24D77A9D00508BC3 /* PickerPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPopUp.swift; sourceTree = "<group>"; };
+		8AE70E9F24D7AFD400508BC3 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		8AE70EA224D8744A00508BC3 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AE4948624CC93C900E8DD58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AE4946F24CC93C200E8DD58 = {
+			isa = PBXGroup;
+			children = (
+				8AE4947E24CC93C200E8DD58 /* Intervally WatchKit App */,
+				8AE4948D24CC93C900E8DD58 /* Intervally WatchKit Extension */,
+				8AE4947724CC93C200E8DD58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AE4947724CC93C200E8DD58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AE4947624CC93C200E8DD58 /* Intervally.app */,
+				8AE4947A24CC93C200E8DD58 /* Intervally.app */,
+				8AE4948924CC93C900E8DD58 /* Intervally.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AE4947E24CC93C200E8DD58 /* Intervally WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8AE4947F24CC93C200E8DD58 /* Interface.storyboard */,
+				8AE4948224CC93C900E8DD58 /* Assets.xcassets */,
+				8AE4948424CC93C900E8DD58 /* Info.plist */,
+			);
+			path = "Intervally WatchKit App";
+			sourceTree = "<group>";
+		};
+		8AE4948D24CC93C900E8DD58 /* Intervally WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8AE70E9A24D7743000508BC3 /* Styles.swift */,
+				8AE70E9E24D77AA400508BC3 /* PickerPopUp */,
+				8AE70E9224D7529D00508BC3 /* SelectorView */,
+				8AE70E9324D752B300508BC3 /* TimerView */,
+				8AE4949024CC93C900E8DD58 /* HostingController.swift */,
+				8AE4949224CC93C900E8DD58 /* ExtensionDelegate.swift */,
+				8AE4949424CC93C900E8DD58 /* NotificationController.swift */,
+				8AE4949624CC93C900E8DD58 /* NotificationView.swift */,
+				8AE4949824CC93CA00E8DD58 /* Assets.xcassets */,
+				8AE4949D24CC93CA00E8DD58 /* Info.plist */,
+				8AE4949E24CC93CA00E8DD58 /* PushNotificationPayload.apns */,
+				8AE4949A24CC93CA00E8DD58 /* Preview Content */,
+			);
+			path = "Intervally WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8AE4949A24CC93CA00E8DD58 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8AE4949B24CC93CA00E8DD58 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8AE70E9224D7529D00508BC3 /* SelectorView */ = {
+			isa = PBXGroup;
+			children = (
+				8AE4948E24CC93C900E8DD58 /* SelectorView.swift */,
+				8AE70E9624D7543F00508BC3 /* SelectorOptions.swift */,
+				8AE70E9824D7736E00508BC3 /* SelectorButton.swift */,
+			);
+			path = SelectorView;
+			sourceTree = "<group>";
+		};
+		8AE70E9324D752B300508BC3 /* TimerView */ = {
+			isa = PBXGroup;
+			children = (
+				8AE70E9424D752E900508BC3 /* TimerView.swift */,
+				8AE70EA224D8744A00508BC3 /* TimerState.swift */,
+				8AE70E9F24D7AFD400508BC3 /* Ring.swift */,
+			);
+			path = TimerView;
+			sourceTree = "<group>";
+		};
+		8AE70E9E24D77AA400508BC3 /* PickerPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				8AE70E9C24D77A9D00508BC3 /* PickerPopUp.swift */,
+			);
+			path = PickerPopUp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AE4947524CC93C200E8DD58 /* Intervally */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AE494A924CC93CA00E8DD58 /* Build configuration list for PBXNativeTarget "Intervally" */;
+			buildPhases = (
+				8AE4947424CC93C200E8DD58 /* Resources */,
+				8AE494A824CC93CA00E8DD58 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AE4947D24CC93C200E8DD58 /* PBXTargetDependency */,
+			);
+			name = Intervally;
+			productName = Intervally;
+			productReference = 8AE4947624CC93C200E8DD58 /* Intervally.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		8AE4947924CC93C200E8DD58 /* Intervally WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AE494A524CC93CA00E8DD58 /* Build configuration list for PBXNativeTarget "Intervally WatchKit App" */;
+			buildPhases = (
+				8AE4947824CC93C200E8DD58 /* Resources */,
+				8AE494A424CC93CA00E8DD58 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AE4948C24CC93C900E8DD58 /* PBXTargetDependency */,
+			);
+			name = "Intervally WatchKit App";
+			productName = "Intervally WatchKit App";
+			productReference = 8AE4947A24CC93C200E8DD58 /* Intervally.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8AE4948824CC93C900E8DD58 /* Intervally WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AE494A124CC93CA00E8DD58 /* Build configuration list for PBXNativeTarget "Intervally WatchKit Extension" */;
+			buildPhases = (
+				8AE4948524CC93C900E8DD58 /* Sources */,
+				8AE4948624CC93C900E8DD58 /* Frameworks */,
+				8AE4948724CC93C900E8DD58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intervally WatchKit Extension";
+			productName = "Intervally WatchKit Extension";
+			productReference = 8AE4948924CC93C900E8DD58 /* Intervally.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AE4947024CC93C200E8DD58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Josiah Rininger";
+				TargetAttributes = {
+					8AE4947524CC93C200E8DD58 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					8AE4947924CC93C200E8DD58 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					8AE4948824CC93C900E8DD58 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 8AE4947324CC93C200E8DD58 /* Build configuration list for PBXProject "Intervally" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AE4946F24CC93C200E8DD58;
+			productRefGroup = 8AE4947724CC93C200E8DD58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AE4947524CC93C200E8DD58 /* Intervally */,
+				8AE4947924CC93C200E8DD58 /* Intervally WatchKit App */,
+				8AE4948824CC93C900E8DD58 /* Intervally WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AE4947424CC93C200E8DD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE4947824CC93C200E8DD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE4948324CC93C900E8DD58 /* Assets.xcassets in Resources */,
+				8AE4948124CC93C200E8DD58 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AE4948724CC93C900E8DD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE4949C24CC93CA00E8DD58 /* Preview Assets.xcassets in Resources */,
+				8AE4949924CC93CA00E8DD58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AE4948524CC93C900E8DD58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE70E9B24D7743000508BC3 /* Styles.swift in Sources */,
+				8AE70EA324D8744A00508BC3 /* TimerState.swift in Sources */,
+				8AE70E9524D752E900508BC3 /* TimerView.swift in Sources */,
+				8AC6C18624D0C2F1003127FD /* HostingController.swift in Sources */,
+				8AE4948F24CC93C900E8DD58 /* SelectorView.swift in Sources */,
+				8AE70E9D24D77A9D00508BC3 /* PickerPopUp.swift in Sources */,
+				8AE4949524CC93C900E8DD58 /* NotificationController.swift in Sources */,
+				8AE70E9924D7736E00508BC3 /* SelectorButton.swift in Sources */,
+				8AE4949324CC93C900E8DD58 /* ExtensionDelegate.swift in Sources */,
+				8AE70E9724D7543F00508BC3 /* SelectorOptions.swift in Sources */,
+				8AE70EA024D7AFD400508BC3 /* Ring.swift in Sources */,
+				8AE4949724CC93C900E8DD58 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AE4947D24CC93C200E8DD58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AE4947924CC93C200E8DD58 /* Intervally WatchKit App */;
+			targetProxy = 8AE4947C24CC93C200E8DD58 /* PBXContainerItemProxy */;
+		};
+		8AE4948C24CC93C900E8DD58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AE4948824CC93C900E8DD58 /* Intervally WatchKit Extension */;
+			targetProxy = 8AE4948B24CC93C900E8DD58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AE4947F24CC93C200E8DD58 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AE4948024CC93C200E8DD58 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AE4949F24CC93CA00E8DD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AE494A024CC93CA00E8DD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AE494A224CC93CA00E8DD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Intervally WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = BPW45ZHW4H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Intervally WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josiahdr.intervally.watchkitapp.watchkitextension;
+				PRODUCT_NAME = Intervally;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		8AE494A324CC93CA00E8DD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Intervally WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = BPW45ZHW4H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Intervally WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josiahdr.intervally.watchkitapp.watchkitextension;
+				PRODUCT_NAME = Intervally;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		8AE494A624CC93CA00E8DD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = BPW45ZHW4H;
+				IBSC_MODULE = Intervally_WatchKit_Extension;
+				INFOPLIST_FILE = "Intervally WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.josiahdr.intervally.watchkitapp;
+				PRODUCT_NAME = Intervally;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		8AE494A724CC93CA00E8DD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = BPW45ZHW4H;
+				IBSC_MODULE = Intervally_WatchKit_Extension;
+				INFOPLIST_FILE = "Intervally WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.josiahdr.intervally.watchkitapp;
+				PRODUCT_NAME = Intervally;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		8AE494AA24CC93CA00E8DD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = BPW45ZHW4H;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josiahdr.intervally;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8AE494AB24CC93CA00E8DD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = BPW45ZHW4H;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josiahdr.intervally;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AE4947324CC93C200E8DD58 /* Build configuration list for PBXProject "Intervally" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE4949F24CC93CA00E8DD58 /* Debug */,
+				8AE494A024CC93CA00E8DD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AE494A124CC93CA00E8DD58 /* Build configuration list for PBXNativeTarget "Intervally WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE494A224CC93CA00E8DD58 /* Debug */,
+				8AE494A324CC93CA00E8DD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AE494A524CC93CA00E8DD58 /* Build configuration list for PBXNativeTarget "Intervally WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE494A624CC93CA00E8DD58 /* Debug */,
+				8AE494A724CC93CA00E8DD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AE494A924CC93CA00E8DD58 /* Build configuration list for PBXNativeTarget "Intervally" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE494AA24CC93CA00E8DD58 /* Debug */,
+				8AE494AB24CC93CA00E8DD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AE4947024CC93C200E8DD58 /* Project object */;
+}

@@ -1,1 +1,0 @@
-# paint-github-8999d

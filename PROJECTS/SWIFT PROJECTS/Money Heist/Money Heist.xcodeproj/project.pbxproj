@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		256E964A27761D9F0055BE74 /* Money_HeistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E964927761D9F0055BE74 /* Money_HeistApp.swift */; };
+		256E964C27761D9F0055BE74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E964B27761D9F0055BE74 /* ContentView.swift */; };
+		256E964E27761DA00055BE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256E964D27761DA00055BE74 /* Assets.xcassets */; };
+		256E965127761DA00055BE74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256E965027761DA00055BE74 /* Preview Assets.xcassets */; };
+		256E965B27761DA00055BE74 /* Money_HeistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E965A27761DA00055BE74 /* Money_HeistTests.swift */; };
+		256E966527761DA00055BE74 /* Money_HeistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E966427761DA00055BE74 /* Money_HeistUITests.swift */; };
+		256E966727761DA00055BE74 /* Money_HeistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E966627761DA00055BE74 /* Money_HeistUITestsLaunchTests.swift */; };
+		25729B11277642CC00CDBACA /* details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25729B10277642CC00CDBACA /* details.swift */; };
+		25C92F9927764C610023F768 /* WorldMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C92F9827764C610023F768 /* WorldMap.swift */; };
+		25E8E21D2785950C004DE38D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E8E21C2785950C004DE38D /* Storyboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		256E965727761DA00055BE74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 256E963E27761D9F0055BE74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256E964527761D9F0055BE74;
+			remoteInfo = "Money Heist";
+		};
+		256E966127761DA00055BE74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 256E963E27761D9F0055BE74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256E964527761D9F0055BE74;
+			remoteInfo = "Money Heist";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		256E964627761D9F0055BE74 /* Money Heist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Heist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256E964927761D9F0055BE74 /* Money_HeistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_HeistApp.swift; sourceTree = "<group>"; };
+		256E964B27761D9F0055BE74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		256E964D27761DA00055BE74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		256E965027761DA00055BE74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		256E965627761DA00055BE74 /* Money HeistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money HeistTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256E965A27761DA00055BE74 /* Money_HeistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_HeistTests.swift; sourceTree = "<group>"; };
+		256E966027761DA00055BE74 /* Money HeistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money HeistUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		256E966427761DA00055BE74 /* Money_HeistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_HeistUITests.swift; sourceTree = "<group>"; };
+		256E966627761DA00055BE74 /* Money_HeistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_HeistUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25729B10277642CC00CDBACA /* details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = details.swift; sourceTree = "<group>"; };
+		25C92F9827764C610023F768 /* WorldMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldMap.swift; sourceTree = "<group>"; };
+		25E8E21C2785950C004DE38D /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		256E964327761D9F0055BE74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256E965327761DA00055BE74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256E965D27761DA00055BE74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		256E963D27761D9F0055BE74 = {
+			isa = PBXGroup;
+			children = (
+				256E964827761D9F0055BE74 /* Money Heist */,
+				256E965927761DA00055BE74 /* Money HeistTests */,
+				256E966327761DA00055BE74 /* Money HeistUITests */,
+				256E964727761D9F0055BE74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		256E964727761D9F0055BE74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				256E964627761D9F0055BE74 /* Money Heist.app */,
+				256E965627761DA00055BE74 /* Money HeistTests.xctest */,
+				256E966027761DA00055BE74 /* Money HeistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		256E964827761D9F0055BE74 /* Money Heist */ = {
+			isa = PBXGroup;
+			children = (
+				256E964927761D9F0055BE74 /* Money_HeistApp.swift */,
+				25C92F9827764C610023F768 /* WorldMap.swift */,
+				256E964B27761D9F0055BE74 /* ContentView.swift */,
+				25E8E21C2785950C004DE38D /* Storyboard.storyboard */,
+				25729B10277642CC00CDBACA /* details.swift */,
+				256E964D27761DA00055BE74 /* Assets.xcassets */,
+				256E964F27761DA00055BE74 /* Preview Content */,
+			);
+			path = "Money Heist";
+			sourceTree = "<group>";
+		};
+		256E964F27761DA00055BE74 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				256E965027761DA00055BE74 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		256E965927761DA00055BE74 /* Money HeistTests */ = {
+			isa = PBXGroup;
+			children = (
+				256E965A27761DA00055BE74 /* Money_HeistTests.swift */,
+			);
+			path = "Money HeistTests";
+			sourceTree = "<group>";
+		};
+		256E966327761DA00055BE74 /* Money HeistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				256E966427761DA00055BE74 /* Money_HeistUITests.swift */,
+				256E966627761DA00055BE74 /* Money_HeistUITestsLaunchTests.swift */,
+			);
+			path = "Money HeistUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		256E964527761D9F0055BE74 /* Money Heist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256E966A27761DA00055BE74 /* Build configuration list for PBXNativeTarget "Money Heist" */;
+			buildPhases = (
+				256E964227761D9F0055BE74 /* Sources */,
+				256E964327761D9F0055BE74 /* Frameworks */,
+				256E964427761D9F0055BE74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Money Heist";
+			productName = "Money Heist";
+			productReference = 256E964627761D9F0055BE74 /* Money Heist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		256E965527761DA00055BE74 /* Money HeistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256E966D27761DA00055BE74 /* Build configuration list for PBXNativeTarget "Money HeistTests" */;
+			buildPhases = (
+				256E965227761DA00055BE74 /* Sources */,
+				256E965327761DA00055BE74 /* Frameworks */,
+				256E965427761DA00055BE74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256E965827761DA00055BE74 /* PBXTargetDependency */,
+			);
+			name = "Money HeistTests";
+			productName = "Money HeistTests";
+			productReference = 256E965627761DA00055BE74 /* Money HeistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		256E965F27761DA00055BE74 /* Money HeistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256E967027761DA00055BE74 /* Build configuration list for PBXNativeTarget "Money HeistUITests" */;
+			buildPhases = (
+				256E965C27761DA00055BE74 /* Sources */,
+				256E965D27761DA00055BE74 /* Frameworks */,
+				256E965E27761DA00055BE74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256E966227761DA00055BE74 /* PBXTargetDependency */,
+			);
+			name = "Money HeistUITests";
+			productName = "Money HeistUITests";
+			productReference = 256E966027761DA00055BE74 /* Money HeistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		256E963E27761D9F0055BE74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					256E964527761D9F0055BE74 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					256E965527761DA00055BE74 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 256E964527761D9F0055BE74;
+					};
+					256E965F27761DA00055BE74 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 256E964527761D9F0055BE74;
+					};
+				};
+			};
+			buildConfigurationList = 256E964127761D9F0055BE74 /* Build configuration list for PBXProject "Money Heist" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 256E963D27761D9F0055BE74;
+			productRefGroup = 256E964727761D9F0055BE74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				256E964527761D9F0055BE74 /* Money Heist */,
+				256E965527761DA00055BE74 /* Money HeistTests */,
+				256E965F27761DA00055BE74 /* Money HeistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		256E964427761D9F0055BE74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256E965127761DA00055BE74 /* Preview Assets.xcassets in Resources */,
+				256E964E27761DA00055BE74 /* Assets.xcassets in Resources */,
+				25E8E21D2785950C004DE38D /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256E965427761DA00055BE74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256E965E27761DA00055BE74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		256E964227761D9F0055BE74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256E964C27761D9F0055BE74 /* ContentView.swift in Sources */,
+				25729B11277642CC00CDBACA /* details.swift in Sources */,
+				256E964A27761D9F0055BE74 /* Money_HeistApp.swift in Sources */,
+				25C92F9927764C610023F768 /* WorldMap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256E965227761DA00055BE74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256E965B27761DA00055BE74 /* Money_HeistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256E965C27761DA00055BE74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256E966527761DA00055BE74 /* Money_HeistUITests.swift in Sources */,
+				256E966727761DA00055BE74 /* Money_HeistUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		256E965827761DA00055BE74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 256E964527761D9F0055BE74 /* Money Heist */;
+			targetProxy = 256E965727761DA00055BE74 /* PBXContainerItemProxy */;
+		};
+		256E966227761DA00055BE74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 256E964527761D9F0055BE74 /* Money Heist */;
+			targetProxy = 256E966127761DA00055BE74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		256E966827761DA00055BE74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		256E966927761DA00055BE74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		256E966B27761DA00055BE74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Money Heist/Preview Content\"";
+				DEVELOPMENT_TEAM = FMDDD27JUN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "c02kr.Money-Heist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		256E966C27761DA00055BE74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Money Heist/Preview Content\"";
+				DEVELOPMENT_TEAM = FMDDD27JUN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "c02kr.Money-Heist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		256E966E27761DA00055BE74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "c02kr.Money-HeistTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Money Heist.app/Money Heist";
+			};
+			name = Debug;
+		};
+		256E966F27761DA00055BE74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "c02kr.Money-HeistTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Money Heist.app/Money Heist";
+			};
+			name = Release;
+		};
+		256E967127761DA00055BE74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "c02kr.Money-HeistUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Money Heist";
+			};
+			name = Debug;
+		};
+		256E967227761DA00055BE74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "c02kr.Money-HeistUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Money Heist";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		256E964127761D9F0055BE74 /* Build configuration list for PBXProject "Money Heist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256E966827761DA00055BE74 /* Debug */,
+				256E966927761DA00055BE74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256E966A27761DA00055BE74 /* Build configuration list for PBXNativeTarget "Money Heist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256E966B27761DA00055BE74 /* Debug */,
+				256E966C27761DA00055BE74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256E966D27761DA00055BE74 /* Build configuration list for PBXNativeTarget "Money HeistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256E966E27761DA00055BE74 /* Debug */,
+				256E966F27761DA00055BE74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256E967027761DA00055BE74 /* Build configuration list for PBXNativeTarget "Money HeistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256E967127761DA00055BE74 /* Debug */,
+				256E967227761DA00055BE74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 256E963E27761D9F0055BE74 /* Project object */;
+}

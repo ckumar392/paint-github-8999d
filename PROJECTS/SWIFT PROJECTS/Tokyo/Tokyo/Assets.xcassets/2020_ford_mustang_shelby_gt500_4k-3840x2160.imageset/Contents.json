@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "2020_ford_mustang_shelby_gt500_4k-3840x2160.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

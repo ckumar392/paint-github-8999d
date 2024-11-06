@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "rolls-royce-dawn-black-badge-spirit-of-ecstasy-2021-black-9504x6336-3869.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

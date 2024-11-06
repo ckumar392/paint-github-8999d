@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21501"/>
+    </dependencies>
+    <scenes>
+        <!--Add Reminder View-->
+        <scene sceneID="8Ik-VO-fqz">
+            <objects>
+                <controller id="Dci-Th-t3h" customClass="AddReminderView" customModule="WatchWash_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Set Reminder" textAlignment="center" id="8Ze-IF-mTu"/>
+                        <separator alignment="left" id="bHP-3j-I54">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <group width="1" alignment="left" id="I0o-BL-2ck">
+                            <items>
+                                <picker width="42" height="60" alignment="center" verticalAlignment="center" focusStyle="stack" id="S8R-P7-KEn">
+                                    <variation key="device=watch38mm" width="42"/>
+                                    <variation key="device=watch44mm" height="80" width="58"/>
+                                    <connections>
+                                        <action selector="hourSelect:" destination="Dci-Th-t3h" id="LZ0-6K-0ef"/>
+                                    </connections>
+                                </picker>
+                                <picker width="44" height="60" alignment="center" verticalAlignment="center" focusStyle="stack" id="psL-qj-V1Y">
+                                    <variation key="device=watch38mm" width="44"/>
+                                    <variation key="device=watch44mm" height="80" width="58"/>
+                                    <connections>
+                                        <action selector="minuteSelect:" destination="Dci-Th-t3h" id="dEj-re-X36"/>
+                                    </connections>
+                                </picker>
+                                <picker width="44" height="60" alignment="center" verticalAlignment="center" focusStyle="stack" id="xca-wq-pp9">
+                                    <variation key="device=watch38mm" width="44"/>
+                                    <variation key="device=watch44mm" height="80" width="58"/>
+                                    <connections>
+                                        <action selector="timeOfDaySelect:" destination="Dci-Th-t3h" id="bSR-2b-yA7"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="cds-Ea-es0">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <label alignment="center" text="Time" id="kVm-jr-ZKG"/>
+                        <separator alignment="left" id="9hV-b8-Efs">
+                            <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </separator>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Save" id="rX5-D9-pmT">
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveReminderButton" destination="Dci-Th-t3h" id="feW-ZA-RaI"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="hourPicker" destination="S8R-P7-KEn" id="nF0-6H-gnX"/>
+                        <outlet property="minutePicker" destination="psL-qj-V1Y" id="PDe-am-iR7"/>
+                        <outlet property="timeOfDayPicker" destination="xca-wq-pp9" id="vhY-jD-J5t"/>
+                        <outlet property="timeSelectLabel" destination="kVm-jr-ZKG" id="uyq-QH-lV9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="207.69565217391303" y="-294.84375"/>
+        </scene>
+        <!--settingsView-->
+        <scene sceneID="6td-I2-t0T">
+            <objects>
+                <controller identifier="settingsView" id="icw-Xs-a4p" customClass="SettingsView" customModule="WatchWash_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Default Countdown" id="OIv-MA-pEV"/>
+                        <picker height="80" alignment="left" focusStyle="sequence" id="tyy-kh-fOo">
+                            <connections>
+                                <action selector="pickerSelect:" destination="icw-Xs-a4p" id="7UA-CW-gEx"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Save" id="D8i-wj-nkl">
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveButtonPressed" destination="icw-Xs-a4p" id="MVI-6x-fmK"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="pickerTime" destination="tyy-kh-fOo" id="Nyl-DM-Ceh"/>
+                        <outlet property="savePickerButton" destination="D8i-wj-nkl" id="n0A-CH-kmh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="-295"/>
+        </scene>
+        <!--reminderView-->
+        <scene sceneID="JZv-9P-Fgk">
+            <objects>
+                <controller identifier="reminderView" id="2US-wS-Tiz" customClass="ReminderViewController" customModule="WatchWash_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Add Reminder" id="SIu-oJ-Q2B">
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addReminderPressed" destination="2US-wS-Tiz" id="wab-CU-AUV"/>
+                                <segue destination="Dci-Th-t3h" kind="modal" id="qeE-7n-DvZ"/>
+                            </connections>
+                        </button>
+                        <table alignment="center" id="9rL-nr-rQ3">
+                            <items>
+                                <tableRow identifier="reminderRow" id="Wd5-3H-AUD" customClass="reminderRow" customModule="WatchWash_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="wSa-7P-fW5">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Time" textAlignment="center" id="G6H-ma-LHe"/>
+                                            <button width="24" height="24" alignment="right" verticalAlignment="center" backgroundImage="trash" catalog="system" id="Vw2-8G-0Jo">
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="pressDelete" destination="Wd5-3H-AUD" id="5e2-Ng-QRA"/>
+                                                </connections>
+                                            </button>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="deleteButton" destination="Vw2-8G-0Jo" id="ibX-t7-LCx"/>
+                                        <outlet property="reminderLabel" destination="G6H-ma-LHe" id="dKR-cv-mzP"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="reminderTable" destination="9rL-nr-rQ3" id="Wm0-9H-pm7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-61" y="-291"/>
+        </scene>
+        <!--mainView-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="mainView" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchWash_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="130" height="130" alignment="center" verticalAlignment="center" id="hTI-kb-RAk">
+                            <items>
+                                <button width="130" height="130" alignment="left" title="Bro Start Washing!" id="fx4-rk-Frn">
+                                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="starButtonPressed" destination="AgC-eL-Hgc" id="E56-uj-waY"/>
+                                        <segue destination="5Rw-Zn-92U" kind="push" identifier="timerSegue" id="iuh-Sx-FRb"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="vQP-lo-bps">
+                        <items>
+                            <menuItem title="Reminder" image="list.dash" catalog="system" id="i8n-xD-Dys">
+                                <connections>
+                                    <action selector="menuReminder" destination="AgC-eL-Hgc" id="Izc-1g-qQa"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Settings" image="gear" catalog="system" id="I1u-rE-Df8">
+                                <connections>
+                                    <action selector="menuPowerWash" destination="AgC-eL-Hgc" id="ESl-3G-RHZ"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="buttonGroup" destination="hTI-kb-RAk" id="EFv-la-raZ"/>
+                        <outlet property="startButton" destination="fx4-rk-Frn" id="3Cr-ee-xMJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-64" y="64"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label width="1" alignment="left" verticalAlignment="center" text="Ab hath dho len?" textAlignment="left" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="219.52173913043478" y="642.8125"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchWash_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Timer Controller-->
+        <scene sceneID="bvB-Wu-MiH">
+            <objects>
+                <controller id="5Rw-Zn-92U" customClass="TimerController" customModule="WatchWash_WatchKit_Extension">
+                    <items>
+                        <group width="126" height="126" alignment="center" verticalAlignment="center" id="2h0-kG-gpR">
+                            <items>
+                                <timer alignment="center" verticalAlignment="center" textAlignment="center" format="abbreviated" previewedSeconds="20" id="sWe-xZ-cmW">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                    <calendarUnit key="units" second="YES"/>
+                                </timer>
+                            </items>
+                            <variation key="device=watch38mm" height="130" width="130"/>
+                            <variation key="device=watch44mm" height="160" width="160"/>
+                        </group>
+                        <label alignment="center" verticalAlignment="bottom" text="test" textAlignment="center" numberOfLines="0" id="UZg-l1-MSg">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="countdownTimer" destination="sWe-xZ-cmW" id="4BO-zO-CUu"/>
+                        <outlet property="textLabel" destination="UZg-l1-MSg" id="JsW-Ex-y95"/>
+                        <outlet property="timerGroup" destination="2h0-kG-gpR" id="Hcl-lD-STK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="208" y="66"/>
+        </scene>
+        <!--secondTimerView-->
+        <scene sceneID="SaZ-VR-DNF">
+            <objects>
+                <controller identifier="secondTimerView" id="T0k-vX-wip" customClass="SecondTimerController" customModule="WatchWash_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="bottom" text="test" textAlignment="center" numberOfLines="0" id="L2m-sk-zBC"/>
+                        <group width="126" height="126" alignment="center" verticalAlignment="center" id="3ap-Nz-1bo">
+                            <items>
+                                <timer alignment="center" verticalAlignment="center" textAlignment="center" format="abbreviated" previewedSeconds="20" id="03E-ma-lKj">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                    <calendarUnit key="units" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="countdownTimer" destination="03E-ma-lKj" id="w5w-kt-1jC"/>
+                        <outlet property="secondTimerGroup" destination="3ap-Nz-1bo" id="287-OX-ejq"/>
+                        <outlet property="textLabel" destination="L2m-sk-zBC" id="9NO-Yc-UCL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="66"/>
+        </scene>
+        <!--doneView-->
+        <scene sceneID="eam-pD-HGl">
+            <objects>
+                <controller identifier="doneView" id="KxS-Q3-EdK" customClass="DoneController" customModule="WatchWash_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="🙌" id="c0u-z1-hEu">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" text="Shabash!" id="Ppa-Ak-OiV">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="717" y="61"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WatchWash_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="118"/>
+        <image name="list.dash" catalog="system" width="128" height="86"/>
+        <image name="trash" catalog="system" width="114" height="128"/>
+    </resources>
+</document>
